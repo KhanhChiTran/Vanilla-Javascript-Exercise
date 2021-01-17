@@ -76,3 +76,32 @@ export function repeatedString(s, n) {
   }
   return result * times + rA;
 }
+
+// https://www.hackerrank.com/challenges/js10-loops/problem
+
+function vowelsAndConsonants(s) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let splits = s.split("");
+  let vowelsArr = splits.filter((x) => vowels.includes(x));
+  let consonantsArr = splits.filter((x) => !vowels.includes(x));
+  let vowelsAndConsonant = vowelsArr.concat(consonantsArr);
+  for (let i = 0; i < vowelsAndConsonant.length; i++) {
+    console.log(vowelsAndConsonant[i]);
+  }
+}
+
+function vowelsAndConsonants(s) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let splits = s.split("");
+  let n = splits.length;
+  let index = 0;
+  for (let i = 0; i < n; i++) {
+    if (vowels.includes(splits[i])) {
+      [splits[index], splits[i]] = [splits[i], splits[index]];
+      index += 1;
+    }
+  }
+  for (let i = 0; i < n; i++) {
+    console.log(splits[i]);
+  }
+}
