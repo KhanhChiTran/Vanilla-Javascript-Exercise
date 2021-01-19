@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello JS</title>
+    <title>Button</title>
   </head>
   <body>
+    <style>
+      #btn {
+        width: 96px;
+        height: 48px;
+      }
+
+      #number {
+        font-size: 24px;
+      }
+    </style>
     <h1>Hello Javascript</h1>
+    <button id="btn"><span id="number">0</span></button>
     <!-- Need to add type='module' to import from another js files to main.js -->
     <script type="module" src="main.js"></script>
+    <script src="./notes.js"></script>
   </body>
 </html>

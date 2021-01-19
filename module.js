@@ -90,18 +90,18 @@ function vowelsAndConsonants(s) {
   }
 }
 
-function vowelsAndConsonants(s) {
-  let vowels = ["a", "e", "i", "o", "u"];
-  let splits = s.split("");
-  let n = splits.length;
-  let index = 0;
-  for (let i = 0; i < n; i++) {
-    if (vowels.includes(splits[i])) {
-      [splits[index], splits[i]] = [splits[i], splits[index]];
-      index += 1;
-    }
-  }
-  for (let i = 0; i < n; i++) {
-    console.log(splits[i]);
-  }
-}
+// function vowelsAndConsonants(s) {
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   let splits = s.split("");
+//   let n = splits.length;
+//   let index = 0;
+//   for (let i = 0; i < n; i++) {
+//     if (vowels.includes(splits[i])) {
+//       [splits[index], splits[i]] = [splits[i], splits[index]];
+//       index += 1;
+//     }
+//   }
+//   for (let i = 0; i < n; i++) {
+//     console.log(splits[i]);
+//   }
+// }
