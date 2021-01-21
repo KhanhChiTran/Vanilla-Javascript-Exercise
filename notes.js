@@ -9,6 +9,8 @@
 // }
 // Math.floor()
 
+// This is bitwise | return flood instead using Math.max()
+
 const numX = Math.floor(3.8 * 8);
 const numY = (3.8 * 8) | 0;
 console.log(numX, numY);
